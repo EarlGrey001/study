@@ -22,3 +22,12 @@ n_5 = gets.to_i
 
 number = [n_1, n_2, n_3, n_4, n_5 ]
 puts number.min
+
+
+input_a = gets.chomp
+input_b = gets.chomp
+if input_a == input_b
+    puts "OK"
+else
+    puts "NG"
+end
