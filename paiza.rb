@@ -31,3 +31,21 @@ if input_a == input_b
 else
     puts "NG"
 end
+
+
+
+input = gets  # 標準入力の取得
+input_n = input.to_i  # 標準入力は文字列であるため数値へ変換
+
+# 以下、質問文のコードの１００を標準入力の数値で置き換え
+(1..input_n).each do |n|
+    if n%15==0
+        puts "Fizz Buzz"
+    elsif n%3==0
+        puts "Fizz"
+    elsif n%5 ==0
+        puts "Buzz"
+    else
+        puts n
+    end
+end
