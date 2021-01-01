@@ -49,3 +49,14 @@ input_n = input.to_i  # 標準入力は文字列であるため数値へ変換
         puts n
     end
 end
+
+
+
+
+
+
+
+
+
+input_line = gets
+puts input_line
