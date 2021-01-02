@@ -1,21 +1,12 @@
-test
 
-TEA
+input = gets.chomp
+inputs = input.split(" ")
+input_d = inputs[0].to_i
+input_s = inputs[1].to_i
 
 
-(1..30).each do |i|
-
-
-  if i%15==0
-      puts "FizzBuzz!"
-  elsif i%3==0
-      puts "Fizz!"
-  elsif i%5==0 
-      puts "Buzz!"
-  else
-      puts i
-  end
-
+if 10000 <= input_d*100000/input_s 
+    puts "yes"
+else
+    puts "no"
 end
-
-
