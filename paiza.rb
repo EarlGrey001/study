@@ -64,6 +64,9 @@ else
     puts "no"
 end
 
+input_m = gets.to_i
+puts input_m + 1
+
 
 
 
