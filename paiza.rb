@@ -67,11 +67,17 @@ end
 input_m = gets.to_i
 puts input_m + 1
 
-
-
-
-
-
-
 input_line = gets
 puts input_line
+
+number = gets.to_i
+
+if number % 400 == 0
+    puts "Yes"
+elsif number % 100 == 0
+    puts "No"
+elsif number % 4 == 0
+    puts "Yes"
+else
+    puts "No"
+end
