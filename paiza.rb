@@ -81,3 +81,8 @@ elsif number % 4 == 0
 else
     puts "No"
 end
+
+
+
+n = gets.to_i
+puts (n-2) * 180 / n
