@@ -86,3 +86,14 @@ end
 
 n = gets.to_i
 puts (n-2) * 180 / n
+
+input = gets.chomp
+inputs = input.split(" ")
+a = inputs[0].to_i
+b = inputs[1].to_i
+
+if a - b < 0
+    puts b - a
+else
+    puts a - b
+end
