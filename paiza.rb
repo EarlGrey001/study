@@ -97,3 +97,7 @@ if a - b < 0
 else
     puts a - b
 end
+
+input = gets
+
+puts input.sub(/, maybe./, '!!')
