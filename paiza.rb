@@ -101,3 +101,7 @@ end
 input = gets
 
 puts input.sub(/, maybe./, '!!')
+
+
+input = gets
+puts input.chars
