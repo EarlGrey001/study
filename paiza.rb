@@ -105,3 +105,12 @@ puts input.sub(/, maybe./, '!!')
 
 input = gets
 puts input.chars
+
+空白
+input_s =  gets.to_f
+array = [input_s-18,input_s-18.5] 
+
+input_n0 = array[0]
+input_n1 = array[1]
+
+puts [input_n0,input_n1].join(" ")
