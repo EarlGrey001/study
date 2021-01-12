@@ -114,3 +114,7 @@ input_n0 = array[0]
 input_n1 = array[1]
 
 puts [input_n0,input_n1].join(" ")
+
+
+input_n = gets.to_i
+print input_n * 100 / 140 , "%"
