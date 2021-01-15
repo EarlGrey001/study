@@ -34,3 +34,11 @@ input_3 = gets
 
 list = [input_1,input_2,input_3]
 puts list
+
+
+#標準入力
+input_line = gets.to_i
+input_line.times do
+  s = gets.chomp.split(" ")
+  print "hello = #{ s[0] } , world = #{ s[1] }\n"
+end
