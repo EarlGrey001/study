@@ -8,7 +8,8 @@ javascript
 input = gets
 puts input
 
-
+input = gets.to_i
+puts input * 7
 
 #input_lines = 2という１行目のデータが入る
 input_lines = gets.to_i
