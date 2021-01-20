@@ -23,6 +23,22 @@ input_lines.times {
 }
 
 
+>> 3.times { puts "Betelgeuse!" }   # 3.timesではブロックに変数を使っていない
+"Betelgeuse!"
+"Betelgeuse!"
+"Betelgeuse!"
+=> 3
+>> (1..5).map { |i| i**2 }          # 「**」記法は冪乗 (べき乗)
+=> [1, 4, 9, 16, 25]
+>> %w[a b c]                        # %w で文字列の配列を作成
+=> ["a", "b", "c"]
+>> %w[a b c].map { |char| char.upcase }
+=> ["A", "B", "C"]
+>> %w[A B C].map { |char| char.downcase }
+=> ["a", "b", "c"]
+
+
+
 getsメソッド： 入力を一行ごとに「文字列」で受け取る。
 chompメソッド： 文字列の改行を取り除く。
 to_iメソッド： 「文字列」を「数」に変換する。
