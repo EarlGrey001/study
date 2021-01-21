@@ -1,5 +1,18 @@
 #rails-tutorial
 
+#Sample App 実装例のコードと自分のコードを比較しましたか？
+#チュートリアルで使用した gem のバージョン（Rails を含む）を正確に使用していますか？
+#エラーメッセージをググってみましたか？
+#RailsのWebサーバを（Ctrl-Cで）停止して再起動しましたか？
+#bin/spring stopを使ってSpringを停止してみましたか？
+#本のコードをコピー＆ペーストしてみましたか？（経験上、コードを手入力することは、一般的にはより優れた学習手法ですが、エラーが発生しやすいため、疑わしい場合はすべてのコードを正確にコピーしてください。）
+#bundle installを再実行しましたか？
+#bundle updateを実行してみましたか？
+#heroku logsやheroku logs --tailを使って Heroku のログを調べましたか？
+#sqlite3gem がGemfileの開発環境とテスト環境にのみリストされていることを確認しましたか？
+#再び、エラーメッセージをググってみましたか？
+
+
 ruby
 ruby on rails 
 HTML/CSS
@@ -61,6 +74,8 @@ input_line.times do
   s = gets.chomp.split(" ")
   print "hello = #{ s[0] } , world = #{ s[1] }\n"
 end
+
+
 
 
 ・lengthメソッド（文字列）
