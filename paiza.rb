@@ -118,3 +118,10 @@ puts [input_n0,input_n1].join(" ")
 
 input_n = gets.to_i
 print input_n * 100 / 140 , "%"
+
+
+
+
+
+input = gets.to_i
+puts 100 + input * 10 
