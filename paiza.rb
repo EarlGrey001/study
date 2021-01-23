@@ -119,8 +119,8 @@ puts [input_n0,input_n1].join(" ")
 input_n = gets.to_i
 print input_n * 100 / 140 , "%"
 
-
-
+input_n = gets.to_i
+puts input_n * (input_n - 1) / 2
 
 
 input = gets.to_i
