@@ -125,3 +125,6 @@ puts input_n * (input_n - 1) / 2
 
 input = gets.to_i
 puts 100 + input * 10 
+
+input = gets.to_i
+puts input * 12
