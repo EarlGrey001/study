@@ -128,3 +128,7 @@ puts 100 + input * 10
 
 input = gets.to_i
 puts input * 12
+
+
+input = gets
+print "Best in" + " " + input
