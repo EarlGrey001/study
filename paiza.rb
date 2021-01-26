@@ -23,6 +23,9 @@ n_5 = gets.to_i
 number = [n_1, n_2, n_3, n_4, n_5 ]
 puts number.min
 
+絶対値
+input = gets.to_i
+puts input.abs
 
 input_a = gets.chomp
 input_b = gets.chomp
@@ -132,3 +135,5 @@ puts input * 12
 
 input = gets
 print "Best in" + " " + input
+
+
