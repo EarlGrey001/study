@@ -27,6 +27,11 @@ puts number.min
 input = gets.to_i
 puts input.abs
 
+剰余
+input_x = gets.to_i
+input_y = gets.to_i
+puts input_x % input_y
+
 input_a = gets.chomp
 input_b = gets.chomp
 if input_a == input_b
