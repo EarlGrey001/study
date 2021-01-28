@@ -58,6 +58,12 @@ input_n = input.to_i  # 標準入力は文字列であるため数値へ変換
     end
 end
 
+input = gets.to_i
+if input % 2 == 0
+    puts "even"
+else
+    puts "odd"
+end
 
 
 input = gets.chomp
