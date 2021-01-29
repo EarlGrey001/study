@@ -148,3 +148,16 @@ input = gets
 print "Best in" + " " + input
 
 
+
+
+
+
+
+
+
+
+
+
+input_x = gets.to_i
+input_y = gets.to_i
+puts 180 - (input_x + input_y)
