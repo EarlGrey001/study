@@ -148,16 +148,23 @@ input = gets
 print "Best in" + " " + input
 
 
-
-
-
-
-
-
-
-
-
-
 input_x = gets.to_i
 input_y = gets.to_i
 puts 180 - (input_x + input_y)
+
+input = gets.chomp
+input_x = input.length 
+
+print"+"
+input_x.times{
+  print("+")
+}
+print"+\n"
+
+print "+" + input + "+\n"
+
+print"+"
+input_x.times{
+  print("+")
+}
+print"+"
