@@ -96,7 +96,12 @@ else
     puts "No"
 end
 
-
+繰り返し
+i = 1
+while i<1001
+ puts i
+ i += 1
+end
 
 n = gets.to_i
 puts (n-2) * 180 / n
