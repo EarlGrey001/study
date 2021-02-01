@@ -173,3 +173,20 @@ input_x.times{
   print("+")
 }
 print"+"
+
+10.times do |i|
+print "#{i+1}"," "
+end
+
+カンマ区切りで 2 つ出力 Ruby編
+input = gets.chomp
+inputs = input.split(" ")
+puts inputs.join(',')
+
+強制3桁
+前に空白を入れる
+input = gets.to_i
+
+str = sprintf("%" "3d",input)
+str_x = str.to_s
+print str_x+ "\n"
