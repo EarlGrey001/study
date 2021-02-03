@@ -187,6 +187,32 @@ puts inputs.join(',')
 前に空白を入れる
 input = gets.to_i
 
+
 str = sprintf("%" "3d",input)
 str_x = str.to_s
 print str_x+ "\n"
+
+
+
+
+複数の数
+n = gets.to_i
+n.times do
+input = gets.to_i
+
+str = sprintf("%" "3d",input)
+str_x = str.to_s
+print str_x+ "\n"
+end
+
+puts [*1..３].join(" ")
+
+
+S1 = gets.chomp
+S2 = gets.chomp
+S3 = gets.chomp
+ 
+array = [S1,S2,S3]
+
+
+print array.join("|")
