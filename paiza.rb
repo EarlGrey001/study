@@ -194,8 +194,15 @@ print str_x+ "\n"
 
 
 
+n行の出力
 
-複数の数
+n = gets.to_i
+n.times do
+input = gets
+puts input
+end
+
+n行の数
 n = gets.to_i
 n.times do
 input = gets.to_i
