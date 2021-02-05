@@ -125,6 +125,19 @@ puts input.sub(/, maybe./, '!!')
 input = gets
 puts input.chars
 
+
+
+#名前　生年月日+1
+input_line = gets.to_i
+input_line.times do
+    array = []
+    s = gets.chomp.split(" ")
+    n = s[0]
+    t = s[1].to_i + 1
+    array.push(n,t)
+    puts array.join(' ')
+end
+
 空白
 input_s =  gets.to_f
 array = [input_s-18,input_s-18.5] 
@@ -223,3 +236,4 @@ array = [S1,S2,S3]
 
 
 print array.join("|")
+
