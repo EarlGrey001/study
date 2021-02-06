@@ -1,10 +1,10 @@
-掛け算
+#掛け算
 
 input = gets.chomp.to_i
 input2 = gets.chomp.to_i
 puts input * input2
 
-足し算
+#足し算
 
 input = gets.chomp
 inputs = input.split(" ")
@@ -12,7 +12,7 @@ a = inputs[0].to_i
 b = inputs[1].to_i
 puts a + b
 
-最小値
+#最小値
 
 n_1 = gets.to_i
 n_2 = gets.to_i
@@ -23,11 +23,11 @@ n_5 = gets.to_i
 number = [n_1, n_2, n_3, n_4, n_5 ]
 puts number.min
 
-絶対値
+#絶対値
 input = gets.to_i
 puts input.abs
 
-剰余
+#剰余
 input_x = gets.to_i
 input_y = gets.to_i
 puts input_x % input_y
@@ -96,7 +96,7 @@ else
     puts "No"
 end
 
-繰り返し
+#繰り返し
 i = 1
 while i<1001
  puts i
@@ -138,7 +138,7 @@ input_line.times do
     puts array.join(' ')
 end
 
-空白
+#空白
 input_s =  gets.to_f
 array = [input_s-18,input_s-18.5] 
 
@@ -191,13 +191,13 @@ print"+"
 print "#{i+1}"," "
 end
 
-カンマ区切りで 2 つ出力 Ruby編
+#カンマ区切りで 2つ出力
 input = gets.chomp
 inputs = input.split(" ")
 puts inputs.join(',')
 
-強制3桁
-前に空白を入れる
+#強制3桁
+#前に空白を入れる
 input = gets.to_i
 
 
@@ -207,7 +207,7 @@ print str_x+ "\n"
 
 
 
-n行の出力
+#n行の出力
 
 n = gets.to_i
 n.times do
@@ -215,7 +215,7 @@ input = gets
 puts input
 end
 
-n行の数
+#n行の数
 n = gets.to_i
 n.times do
 input = gets.to_i
