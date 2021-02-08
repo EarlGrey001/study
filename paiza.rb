@@ -227,7 +227,6 @@ end
 
 puts [*1..３].join(" ")
 
-
 S1 = gets.chomp
 S2 = gets.chomp
 S3 = gets.chomp
@@ -237,3 +236,92 @@ array = [S1,S2,S3]
 
 print array.join("|")
 
+input_line = gets.to_i
+
+
+#文字列
+input_line.times do
+    x = gets.chomp.to_s
+    puts x.length
+end
+
+input = gets.chomp
+str = gets.chomp 
+
+if str.include?(input)
+    puts"YES"
+else
+    puts"NO"
+end
+
+input = gets.chomp
+num = input.split("")
+print num[0].to_i + num[3].to_i , num[1].to_i + num[2].to_i
+
+input_line = gets.chomp
+str = input_line.length
+
+if str == 1
+    puts "00" + input_line
+elsif str == 2
+    puts "0" + input_line
+else
+    puts input_line
+end
+
+input_line = gets.chomp
+input = input_line.split(":")
+x = input[0]
+y = input[1]
+
+x_1 = x[0]
+y_1 = y[0]
+
+if x_1.include?("0") && y_1.include?("0")
+  puts x.slice(1) , y.slice(1)
+elsif x_1.include?("0")
+  puts x.slice(1) , y
+elsif y_1.include?("0")
+  puts x , y.slice(1)
+else
+  puts input
+end
+
+#時刻に+30分
+input = gets.chomp
+a = input[0]
+b = input[1]
+c = input[3]
+d = input[4]
+
+x = a + b
+y = c + d
+
+x_num = x.to_i
+y_num = y.to_i
+
+z_m = y_num - 30
+z_ms = z_m.to_s
+
+z_p = y_num + 30
+z_ps = z_p.to_s
+
+x_str = x.to_s
+x_1 = x_num + 1
+x_1str = x_1.to_s
+
+#if x_num == 23 && 40 <= y_num
+#  puts "00:" + z_ms
+#elsif x_num == 23 && 30 <= y_num
+#  puts "00:0" + z_ms
+if x_num <= 8 && 40 <= y_num
+  print "0"+x_1str,":", z_ms
+elsif x_num <= 8 && 30 <= y_num
+  print "0"+x_1str,":0", z_ms
+elsif 40 <= y_num
+  print x_1str,":", z_ms
+elsif 30 <= y_num
+  print x_1str,":0", z_ms
+else
+  print x_str,":", z_ps
+end
