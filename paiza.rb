@@ -325,3 +325,22 @@ elsif 30 <= y_num
 else
   print x_str,":", z_ps
 end
+
+# 入力
+n = gets.to_i
+input = gets.chomp
+inputs = input.split(" ")
+# 配列作成
+array = []
+i = 0
+# 配列追加
+n.times do
+    x = inputs[i].to_i
+    array.push(x)
+    i += 1
+end
+# 要素数確認
+z = array.select { |n| n % 3 == 0 }
+
+# 要素数出力
+puts z.size
