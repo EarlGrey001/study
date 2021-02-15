@@ -160,7 +160,8 @@ Rubyの標準ライブラリの機能で日付を扱うためのクラスのこ�
 長いテキストを省略して表示することができるメソッド。
 
 
-
+rails db:migrate:reset
+→DBのdrop,create,migrateを一気に行ってくれるコマンド
 
 
 
