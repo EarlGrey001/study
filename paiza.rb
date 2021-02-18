@@ -4,6 +4,8 @@ input = gets.chomp.to_i
 input2 = gets.chomp.to_i
 puts input * input2
 
+
+
 #足し算
 
 input = gets.chomp
@@ -11,6 +13,8 @@ inputs = input.split(" ")
 a = inputs[0].to_i
 b = inputs[1].to_i
 puts a + b
+
+
 
 #最小値
 
@@ -23,9 +27,11 @@ n_5 = gets.to_i
 number = [n_1, n_2, n_3, n_4, n_5 ]
 puts number.min
 
+
 #絶対値
 input = gets.to_i
 puts input.abs
+
 
 #剰余
 input_x = gets.to_i
@@ -127,7 +133,7 @@ puts input.chars
 
 
 
-#名前　生年月日+1
+#名前 生年月日+1
 input_line = gets.to_i
 input_line.times do
     array = []
@@ -344,3 +350,23 @@ z = array.select { |n| n % 3 == 0 }
 
 # 要素数出力
 puts z.size
+
+#12進数1桁
+input_line = gets.chomp
+
+if input_line == "A"
+    puts 10
+elsif input_line == "B"
+    puts 11
+else 
+    puts input_line
+end
+
+#2等分(奇数の場合は一つ減らす)
+input = gets.chomp.to_i
+
+if input % 2 == 1
+    puts (input - 1) / 2
+else
+    puts input / 2
+end
