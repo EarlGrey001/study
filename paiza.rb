@@ -239,7 +239,6 @@ S3 = gets.chomp
  
 array = [S1,S2,S3]
 
-
 print array.join("|")
 
 input_line = gets.to_i
@@ -370,3 +369,14 @@ if input % 2 == 1
 else
     puts input / 2
 end
+
+#
+input_line = gets.chomp
+if input_line.length <= 20
+    puts "OK"
+else
+    puts "NG"
+end
+
+#
+
