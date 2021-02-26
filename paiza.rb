@@ -378,5 +378,26 @@ else
     puts "NG"
 end
 
-#
+#エレベーター
+#入力データを、配列として取得する
+input_lines = readlines.map &:to_i
 
+#現状の階数と、距離の初期設定
+floor_now = 1
+distance = 0
+
+
+input_lines.each do |a|
+    #距離の絶対値で計算をする
+    if (a - floor_now) >0
+        distance += a - floor_now
+    else
+        distance -= a - floor_now
+    end
+    #距離計算後に、階数を更新する
+    floor_now = a
+end
+
+puts distance
+
+#
