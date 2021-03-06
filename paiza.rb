@@ -125,6 +125,42 @@ days -= 1 if is_leap?(y) && m < 3
 
 puts DAYS_OF_WEEK[days % 7]
 
+#次の日を出力
+END_OF_MONTH = [
+  [1, 31],
+  [2, 29],
+  [3, 31],
+  [4, 30],
+  [5, 31],
+  [6, 30],
+  [7, 31],
+  [8, 31],
+  [9, 30],
+  [10, 31],
+  [11, 30]
+]
+
+def is_leap?(y)
+  (y % 400).zero? || (y % 100).nonzero? && (y % 4).zero?
+end
+
+def next_day(y, m, d)
+  case [m, d]
+  when [12, 31]
+    [y + 1, 1, 1]
+  when [2, 28]
+    is_leap?(y) ? [y, 2, 29] : [y, 3, 1]
+  when *END_OF_MONTH
+    [y, m + 1, 1]
+  else
+    [y, m, d + 1]
+  end
+end
+
+y, m, d = gets.split.map(&:to_i)
+
+puts '%d %d %d' % next_day(y, m, d)
+
 #
 
 input = gets  # 標準入力の取得
