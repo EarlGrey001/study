@@ -6,6 +6,13 @@ a = inputs[0].to_i
 b = inputs[1].to_i
 puts a + b
 
+#引き算
+
+input = gets.chomp
+inputs = input.split(" ")
+a = inputs[0].to_i
+b = inputs[1].to_i
+puts a - b
 
 #掛け算
 
@@ -13,7 +20,10 @@ input = gets.chomp.to_i
 input2 = gets.chomp.to_i
 puts input * input2
 
-
+#剰余
+input_x = gets.to_i
+input_y = gets.to_i
+puts input_x % input_y
 
 #最小値
 
@@ -31,11 +41,7 @@ puts number.min
 input = gets.to_i
 puts input.abs
 
-
-#剰余
-input_x = gets.to_i
-input_y = gets.to_i
-puts input_x % input_y
+#
 
 input_a = gets.chomp
 input_b = gets.chomp
