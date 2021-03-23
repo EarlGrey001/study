@@ -20,6 +20,12 @@ input = gets.chomp.to_i
 input2 = gets.chomp.to_i
 puts input * input2
 
+#割り算
+
+input = gets.chomp.to_i
+input2 = gets.chomp.to_i
+puts input / input2
+
 #剰余
 input_x = gets.to_i
 input_y = gets.to_i
