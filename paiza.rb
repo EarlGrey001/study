@@ -258,7 +258,10 @@ puts input.sub(/, maybe./, '!!')
 input = gets
 puts input.chars
 
+#内角の和からn角形を導く
 
+n= gets.to_i
+puts n / 180 + 2
 
 #名前 生年月日+1
 input_line = gets.to_i
