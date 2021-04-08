@@ -39,6 +39,8 @@ splitメソッド： 文字列を分割し、配列に格納する。
 printメソッド
 putsメソッド
 
+#配列
+
 input_1 = gets
 input_2 = gets
 input_3 = gets
