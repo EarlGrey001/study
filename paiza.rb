@@ -47,7 +47,7 @@ puts number.min
 input = gets.to_i
 puts input.abs
 
-#
+#if文
 
 input_a = gets.chomp
 input_b = gets.chomp
