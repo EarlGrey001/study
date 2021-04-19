@@ -191,6 +191,8 @@ input_n = input.to_i  # 標準入力は文字列であるため数値へ変換
     end
 end
 
+#奇数・偶数
+
 input = gets.to_i
 if input % 2 == 0
     puts "even"
@@ -198,6 +200,7 @@ else
     puts "odd"
 end
 
+#
 
 input = gets.chomp
 inputs = input.split(" ")
