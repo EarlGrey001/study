@@ -14,7 +14,6 @@ input_lines.times {
   print "hello = ",s[0]," , world = ",s[1],"\n"
 }
 
-
 >> 3.times { puts "Betelgeuse!" }   # 3.timesではブロックに変数を使っていない
 "Betelgeuse!"
 "Betelgeuse!"
