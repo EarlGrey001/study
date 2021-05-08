@@ -331,9 +331,7 @@ print "#{i+1}"," "
 end
 
 #カンマ区切りで 2つ出力
-input = gets.chomp
-inputs = input.split(" ")
-puts inputs.join(',')
+
 
 #強制3桁
 #前に空白を入れる
@@ -345,6 +343,12 @@ str_x = str.to_s
 print str_x+ "\n"
 
 
+#3つの数字から住所を作る
+input = gets.chomp
+input2 = gets.chomp
+input3 = gets.chomp
+
+puts input + "-" + input2 + "-" + input3
 
 #n行の出力
 
@@ -352,6 +356,15 @@ n = gets.to_i
 n.times do
 input = gets
 puts input
+end
+
+#1000円以上で3円プラス
+input = gets.chomp.to_i
+
+if 1000 <= input
+    puts input + 3
+else
+    puts input
 end
 
 #n行の数
