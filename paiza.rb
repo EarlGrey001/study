@@ -1,3 +1,15 @@
+
+#文字列の末尾の改行文字を取り除き
+
+input = gets.chomp
+
+
+#文字列→数
+
+input = gets.to_i
+
+
+
 #足し算
 
 input = gets.chomp
