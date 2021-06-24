@@ -394,13 +394,12 @@ puts [*1..３].join(" ")
 S1 = gets.chomp
 S2 = gets.chomp
 S3 = gets.chomp
- 
+
 array = [S1,S2,S3]
 
 print array.join("|")
 
 input_line = gets.to_i
-
 
 #文字列
 input_line.times do
