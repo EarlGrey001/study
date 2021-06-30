@@ -492,15 +492,18 @@ end
 n = gets.to_i
 input = gets.chomp
 inputs = input.split(" ")
+
 # 配列作成
 array = []
 i = 0
+
 # 配列追加
 n.times do
     x = inputs[i].to_i
     array.push(x)
     i += 1
 end
+
 # 要素数確認
 z = array.select { |n| n % 3 == 0 }
 
