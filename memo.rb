@@ -1,7 +1,7 @@
 ruby
 ruby on rails 
-HTML/CSS
 javascript
+HTML/CSS
 
 #input_lines = 2という１行目のデータが入る
 input_lines = gets.to_i
