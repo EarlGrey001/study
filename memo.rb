@@ -28,8 +28,6 @@ input_lines.times {
 >> %w[A B C].map { |char| char.downcase }
 => ["a", "b", "c"]
 
-
-
 getsメソッド： 入力を一行ごとに「文字列」で受け取る。
 chompメソッド： 文字列の改行を取り除く。
 to_iメソッド： 「文字列」を「数」に変換する。
